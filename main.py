@@ -25,8 +25,8 @@ def main():
         
         logging.info(f"Predicted class: {predicted_class}")
         logging.info("Symbolic reasoning results:")
-        for rule, result in reasoning_results.items():
-            logging.info(f"  {rule}: {result}")
+        for key, value in reasoning_results.items():
+            logging.info(f"  {key}: {value}")
         
         logging.info("Generating visualization...")
         model_outputs = neuro_symbolic_system.get_layer_outputs(test_image)
